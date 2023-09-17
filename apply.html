@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body style="background-image: url(background.jpeg);">
+<script>function applicationconfirmation()
+    { const cb1 = document.querySelector('#course1');
+    const cb2 = document.querySelector('#course2');
+    const cb3 = document.querySelector('#course3');
+    const cb4 = document.querySelector('#course4');
+    const cb5 = document.querySelector('#course5');
+    const cb6 = document.querySelector('#course6');
+    const cb7 = document.querySelector('#course7');
+    const cb8 = document.querySelector('#course8');
+        if(cb1.checked || cb2.checked ||cb3.checked ||cb4.checked ||cb5.checked ||cb6.checked ||cb7.checked ||cb8.checked){
+            alert("You have successfully applied.");
+        }
+      else{
+        alert("please select courses");
+      }
+    }</script> 
+    <img src="logo.jpeg" alt = "mgit logo" height = "120" width ="300">
+    <br><br>
+    <form><div class = "form1" style="width: 300px;margin-left: 550px;">
+        <h2>Select courses</h2>
+    <p>    you want to apply<br><br><br>
+<input type="checkbox" id="course1" name="course1" value="CSE">
+<label for="course1"> CSE&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course2" name="course2" value="CSM">
+<label for="course2"> CSM&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course3" name="course3" value="CSD">
+<label for="vehicle3"> CSD&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course4" name="course4" value="IT">
+<label for="course4"> IT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course5" name="course5" value="ECE">
+<label for="course5"> ECE&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course6" name="course6" value="EEE">
+<label for="course6"> EEE&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course7" name="course7" value="CIV">
+<label for="course7">CIV&nbsp;&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course8" name="course8" value="MECH">
+<label for="course8"> MECH</label><br>
+<input type="checkbox" id="course9" name="course9" value="MCT">
+<label for="course8"> MCT&nbsp;&nbsp;</label><br>
+<input type="checkbox" id="course8" name="course8" value="MMT">
+<label for="course8"> MMT&nbsp;&nbsp;</label><br>
+<br>
+    <button type="submit" class="btn btn-primary" onclick="applicationconfirmation()">Submit</button>
+    <br><br>
+    </p>
+    </div>
+        </form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset password</title>
+   
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body style="background-image: url(background.jpeg);">
+  <script>function passresetconf(){
+    var newpass=document.forms["reset"]["new"].value;
+var re=document.forms["reset"]["re"].value;
+if(newpass==null ||newpass == ""  )
+{
+  alert("New password field is empty");
+}
+else if(re==null ||re == ""  )
+{
+  alert("Re-Enter password field is empty");
+}
+else if(re!=newpass){
+  alert("Passwords doesn't match");
+}
+else if(newpass.length<8){
+  alert("Password should atleast be 8 characters");
+}
+else{
+  alert("you have successfully changed the password.");
+}
+  }</script>
+    <img src="logo.jpeg" alt = "mgit logo" height = "150" width ="330">
+    <h1 >Reset Password</h1>
+    <form name="reset">
+      <div class = "form1" style="width: 305px;margin-left: 550px;">
+        <div class="row mb-3" >
+            <label for="inputNewPass3" class="col-sm-2 col-form-label"><pre>New Password             </pre></label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputNewPass3" name="new" width="50">
+              <br> <p style="font-size: small;">Password must be atleast 8 characters</p><br>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputrePassword3" class="col-sm-2 col-form-label">
+                <pre style="font-size: medium;">Re-enter Password          </pre></label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputrePassword3" name="re" width="50"><br><br>
+              <button type="submit" value="Submit" onclick="passresetconf()">Submit</button>
+              <br><br>
+            </div>
+          </div>
+        </div>
+    </form>
+    
+</body>
+</html>

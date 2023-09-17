@@ -1,0 +1,38 @@
+h1{
+    font-family: Verdana;
+    font-size: xx-large;
+}
+.form1{
+    width: 625px;
+    background-color:rgb(249, 249, 249);
+    background-size:20px;
+    font-size:15px;
+    letter-spacing: 0.25rex;
+    border: 2px solid black;
+    margin-left: 440px;
+  }
+body{
+    text-align:center;
+      
+      background-color:rgba(96, 156, 72, 0.438);
+      background-size:cover;
+      background-repeat:no-repeat;
+  }
+  button
+  {
+    background-color: red;
+    color:aliceblue;
+  }
+  #contact
+  {
+    background-color: red;
+    color:white;
+    border-color: red;
+  }
+  button{
+    background-color:blue;
+    border:2px solid black;
+  }
+  ul{
+    font-size: medium;
+  }
